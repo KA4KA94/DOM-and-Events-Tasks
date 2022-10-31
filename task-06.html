@@ -8,27 +8,33 @@
     <link rel="stylesheet" href="css/common.css" />
     <style>
       #validation-input {
-        border: 2px solid #bdbdbd;
+        border: 5px solid #bdbdbd;
       }
 
       #validation-input.valid {
-        border-color: #4caf50;
+        border-color: blue;
       }
 
       #validation-input.invalid {
-        border-color: #f44336;
+        border-color: yellow;
       }
     </style>
   </head>
+
   <body>
     <p><a href="index.html">Go back</a></p>
 
     <input
       type="text"
       id="validation-input"
-      data-length="6"
-      placeholder="Please enter 6 symbols"
+      data-length="3"
+      placeholder="Please enter 3 symbols"
     />
+
+    <!-- <button type="button" data-action="set">Set focus to input</button>
+    <button type="button" data-action="remove">Remove focus from input</button>
+    <br><br>
+    <input type="text" class="text-input" /> -->
 
     <script src="js/task-06.js" type="module"></script>
   </body>

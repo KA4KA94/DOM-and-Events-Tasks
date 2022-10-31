@@ -2,13 +2,14 @@ let inputEl = document.querySelector('#name-input');
 let outputEl = document.querySelector('#name-output');
 
 inputEl.addEventListener('input', (event) => {
-    outputEl.textContent = event.currentTarget.value;
     // console.log(outputEl.textContent);
     
     if (event.currentTarget.value === '') {
         outputEl.textContent = 'Anonymous'
+    } else {
+        outputEl.textContent = event.currentTarget.value;
     }
-    // console.log(event.currentTarget.value)
+    console.log(event.currentTarget.value)
 })
 
 
