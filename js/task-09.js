@@ -9,10 +9,15 @@ const colorEl = document.querySelector('.color');
 // console.log("bodyEl", bodyEl)
 // console.log("buttonEl", buttonEl)
 
-buttonEl.addEventListener('click', () => {
-  // console.log(bodyEl.style.background = 'black')
-  bodyEl.style.backgroundColor = getRandomHexColor();
-  colorEl.textContent = `#${Math.floor(Math.random() * 16777215).toString(16)}`
+buttonEl.addEventListener('click', (e) => {
+  console.log(e)
+  // console.log(bodyEl.style.background = 'black');
+  const color = getRandomHexColor();
+  bodyEl.style.backgroundColor = color;
+  colorEl.textContent = color;
+
+  //bodyEl.style.backgroundColor = getRandomHexColor();
+  //colorEl.textContent = getRandomHexColor();
 })
 
 

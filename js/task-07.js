@@ -1,29 +1,29 @@
 // Ver1
 
-const inputEl = document.querySelector('#font-size-control');
-// console.log(inputEl);
-const spanEl = document.querySelector('#text');
-// console.log(spanEl)
+// const inputEl = document.querySelector('#font-size-control');
+// // console.log(inputEl);
+// const spanEl = document.querySelector('#text');
+// // console.log(spanEl)
 
-inputEl.addEventListener('input', () => {
-    spanEl.style.fontSize = `${inputEl.valueAsNumber}px`;
-    // console.log(inputEl.valueAsNumber)
-})
+// inputEl.addEventListener('input', () => {
+//     spanEl.style.fontSize = `${inputEl.valueAsNumber}px`;
+//     // console.log(inputEl.valueAsNumber)
+// })
 
 
 
 // Ver2
 
-// const inputEl = document.querySelector('#font-size-control');
-// const spanEl = document.querySelector('#text');
+const inputEl = document.querySelector('#font-size-control');
+const spanEl = document.querySelector('#text');
 
-// function resizeText(size) {
-//     spanEl.style.fontSize = `${size}px`;
-// }
+function resizeText(size) {
+    spanEl.style.fontSize = `${size}px`;
+}
 
-// inputEl.addEventListener('input', () => {
-//     resizeText(inputEl.valueAsNumber);
-// })
+inputEl.addEventListener('input', () => {
+    resizeText(inputEl.valueAsNumber);
+})
 
 
 // Ver3(VAL)
